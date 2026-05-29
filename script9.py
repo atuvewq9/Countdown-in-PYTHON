@@ -23,24 +23,20 @@ def start_timer():
     countdown()
 
 
-# Main window
 window = Tk ()
 window.title("Countdown Timer")
 window.geometry("300x200")
 
-# Title
 title = Label(window, text="Countdown Timer", font=("Arial", 50),compound=TOP)
 title.place(x=870,y=20)
 
-# Input box
 entry =Entry(window, font=("Arial", 35))
 entry.place(x=870,y=400)
 
-# Start button
 button = Button(window, text="Start", command=start_timer,font=("Arial",35),fg="white",bg="red")
 button.place(x=1000,y=500)
 
-# Timer label
+
 label = Label(window, text="00:00:00", font=("Arial", 35))
 label.place(x=470,y=500)
 window.mainloop()
